@@ -46,7 +46,7 @@ calculateButton.addEventListener('click', function () {
   const cpCode = Math.floor(Math.random() * 10000) + 90000;
 
   // --- Log ticket details to console ---
-  console.log('Dettagli Biglietto:');
+  console.log('--- Dettagli Biglietto ---');
   console.log('Nome Passeggero:', passengerName);
   console.log('Offerta:', offerType);
   console.log('Carrozza:', carriage);
