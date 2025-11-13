@@ -45,6 +45,14 @@ calculateButton.addEventListener('click', function () {
   const carriage = Math.floor(Math.random() * 10) + 1;
   const cpCode = Math.floor(Math.random() * 10000) + 90000;
 
+  // --- Log ticket details to console ---
+  console.log('Dettagli Biglietto:');
+  console.log('Nome Passeggero:', passengerName);
+  console.log('Offerta:', offerType);
+  console.log('Carrozza:', carriage);
+  console.log('Codice CP:', cpCode);
+  console.log('Prezzo Finale:', `€ ${finalPrice.toFixed(2)}`);
+
   // --- Display the ticket ---
   outputName.innerText = passengerName;
   outputOffer.innerText = offerType;
