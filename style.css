@@ -28,6 +28,10 @@ h2 {
   letter-spacing: 1.5px;
 }
 
+h2 {
+  color: black;
+}
+
 /* === FORM CONTAINER === */
 .form-container {
   background-color: white;
@@ -118,18 +122,24 @@ button#calculate:hover {
 
 .passenger-name-box {
   background-color: #e5e7eb;
+  margin-top: 10px;
   padding: 20px;
   min-width: 250px;
 }
 
 .passenger-name-box strong {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
 #output-name {
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 1rem;
   margin-top: 10px;
+}
+
+#output-offer {
+  font-size: 1rem;
+  margin-top: 5px;
 }
 
 .details-grid {
