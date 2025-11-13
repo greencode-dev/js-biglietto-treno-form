@@ -128,12 +128,12 @@ button#calculate:hover {
 }
 
 .passenger-name-box strong {
-  font-size: 1.1rem;
+  font-size: 0.9rem;
 }
 
 #output-name {
   font-weight: bold;
-  font-size: 1rem;
+  font-size: 1.5rem;
   margin-top: 10px;
 }
 
