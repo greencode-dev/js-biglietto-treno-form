@@ -1,12 +1,157 @@
+/* === GENERAL RESET & SETUP === */
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  font-family: Arial, sans-serif;
-  background-color: #333;
-  color: #f4f4f4;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background-color: #b91c1c; /* Red background */
+  color: #333;
+  padding: 40px 20px;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+h1,
+h2 {
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+/* === FORM CONTAINER === */
+.form-container {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.form-group label {
+  font-weight: bold;
+  color: #b91c1c;
+  text-transform: uppercase;
+}
+
+input[type='text'],
+input[type='number'],
+select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 200px;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.buttons {
+  display: flex;
+  gap: 15px;
+  align-self: center;
+}
+
+button {
+  padding: 10px 25px;
+  border: none;
+  border-radius: 5px;
+  background-color: #e5e7eb; /* Light gray */
+  color: #b91c1c;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button#calculate {
+  background-color: #ffc107; /* Amber */
+  color: #333;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  background-color: #d1d5db;
+}
+
+button#calculate:hover {
+  background-color: #ffca2c;
+}
+
+/* === TICKET SECTION === */
+#ticket-section {
+  background-color: white;
   padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.ticket-details {
+  padding: 20px;
+  border-top: 2px dashed #ccc;
+  margin-top: 20px;
+}
+
+.passenger-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.passenger-name-box {
+  background-color: #e5e7eb;
+  padding: 20px;
+  min-width: 250px;
+}
+
+.passenger-name-box strong {
+  font-size: 1.2rem;
+}
+
+#output-name {
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+.details-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px 40px;
+  flex-grow: 1;
+  padding-left: 40px;
+}
+
+.details-grid p {
+  font-size: 1.1rem;
+}
+
+.details-grid strong {
+  display: block;
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+/* === UTILITY === */
+.hidden {
+  display: none;
 }
